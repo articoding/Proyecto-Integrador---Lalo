@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto/Imagen a Voz</title>
+    <link rel="stylesheet" href="imagen-a-voz.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="back-button" onclick="goBack()">←</button>
+            <h1>Chat</h1>
+            <button class="menu-button">☰</button>
+        </div>
+    </header>
+    <main>
+        <textarea id="text-input" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <button id="play-button" onclick="convertTextToSpeech()">Reproducir</button>
+        <input type="file" id="image-input" accept="image/*">
+        <div id="output"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+    <script src="js/imagen-a-voz.js"></script>
+</body>
+</html>
